@@ -36,8 +36,8 @@ document.addEventListener("DOMContentLoaded", function (){
 
         }
         catch(error){
-            // stats.innerHTML = `<p>Unable to found data </p>`;
-            stats.innerHTML = `<p>${error.message}</p>`;
+            stats.innerHTML = `<p>Unable to found data </p>`;
+            // stats.innerHTML = `<p>${error.message}</p>`;
         }
         finally{
             searchButton.textContent = "Search";
