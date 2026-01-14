@@ -83,13 +83,21 @@ document.addEventListener("DOMContentLoaded", function (){
             }
         ).join("");
 
+   
 
+    }
+    function cleanUi(){
+        easyLabel.textContent = "";
+        mediumLabel.textContent = "";
+        hardLabel.textContent = "";
+        statsContainer.innerHTML = "";
     }
 
     searchButton.addEventListener("click", function (){
         const username = usernameInput.value;
         console.log(username);
         if (validateUsername(username)){
+            cleanUi();
             fetchUserDetails(username);
         }
        
